@@ -1,0 +1,79 @@
+@import "../../global.scss";
+
+.home{
+    
+    display: flex;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @include mobile{
+                padding-left: 0;
+                align-items: center;
+            }
+
+            h1{
+                font-size: 80px;
+                margin: 40px 0;
+
+                @include mobile{
+                    font-size: 40px;
+                }
+            }
+            
+            h2{
+                font-size: 60px;
+
+                @include mobile{
+                    padding-left: 0;
+                    align-items: center;
+                }
+
+                span{
+                    font-style: inherit;
+                    color: $mainColor;
+                }
+
+                .ityped-cursor{
+                    animation: blink 1s infinite;
+                }
+
+                @keyframes blink {
+                    50%{
+                        opacity: 1;
+                    }
+                    100%{
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+        a{
+            position: absolute;
+            bottom: 10px;
+            left: 49%;
+
+            img{
+                width: 60px;
+                animation: arrowBlink 2s infinite;
+            }
+
+            @keyframes arrowBlink {
+                100%{
+                    opacity: 0;
+                }
+            }
+        }
+        
+    
+}

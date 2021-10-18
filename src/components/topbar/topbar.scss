@@ -1,0 +1,84 @@
+@import "../../global.scss";
+
+.topbar{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(216, 210, 210);
+    color: $mainColor;
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    transition: all 1s ease;
+    overflow: hidden;
+
+    .wrapper{
+        padding: 10px 30px; //padding from top 10px, left 30px
+        display: flex;
+        align-items: center;
+        justify-content: space-between; //spaces out the content
+
+        .left{
+            display: flex;
+            align-items: center;
+
+            .itemContainer {
+                display: flex;
+                align-items: center;
+                margin-left: 30px;
+                
+
+                img{
+                    height: 40px;
+                    width: 40px;
+                    margin-right: 50px;
+                }
+    
+            }
+            
+
+
+        }
+
+        .right{
+
+            .hamburger{ //design for the top right three lines icon
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; //puts space between the three lines
+                cursor: pointer;
+
+                span{
+                    width: 100%; //width of the hamburger 32px
+                    height: 3px;
+                    background-color: $mainColor;
+                    transform-origin: left;
+                    transition: all 2s ease;
+                }
+            }
+        }
+    }
+
+    &.active{ //& means if it is active, so this all happens when the hamburger is clicked
+        background-color: $mainColor;
+        color: white;
+
+        .hamburger{
+            span{
+                &:first-child{
+                    background-color: white;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:last-child{
+                    background-color: white;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}
