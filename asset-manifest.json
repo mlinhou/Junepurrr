@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Junepurrr/static/css/main.7a03044a.chunk.css",
+    "main.js": "/Junepurrr/static/js/main.29188474.chunk.js",
+    "main.js.map": "/Junepurrr/static/js/main.29188474.chunk.js.map",
+    "runtime-main.js": "/Junepurrr/static/js/runtime-main.b3424148.js",
+    "runtime-main.js.map": "/Junepurrr/static/js/runtime-main.b3424148.js.map",
+    "static/js/2.9cfe68f9.chunk.js": "/Junepurrr/static/js/2.9cfe68f9.chunk.js",
+    "static/js/2.9cfe68f9.chunk.js.map": "/Junepurrr/static/js/2.9cfe68f9.chunk.js.map",
+    "index.html": "/Junepurrr/index.html",
+    "static/css/main.7a03044a.chunk.css.map": "/Junepurrr/static/css/main.7a03044a.chunk.css.map",
+    "static/js/2.9cfe68f9.chunk.js.LICENSE.txt": "/Junepurrr/static/js/2.9cfe68f9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b3424148.js",
+    "static/js/2.9cfe68f9.chunk.js",
+    "static/css/main.7a03044a.chunk.css",
+    "static/js/main.29188474.chunk.js"
+  ]
+}
